@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <body bgcolor="yellow">
+        <fieldset>
+        <h2>Enter first number</h2>
+        <input type="text" id="n1" name="n1" /><br>
+        <h2>Enter second number</h2>
+        <input type="text" id="n2" name="n2" /><br>
+        <br>
+        <button value="add" onclick="addition()">add</button>
+        <button value="sub" onclick="substraction()">sub</button
+        <button value="div" onclick="division()">div</button>
+        <button value="mul" onclick="multiplication()">mul</button>
+        <script>
+            function addition()
+            {
+                const a=parseInt(document.getElementById("n1").value);
+                const b=parseInt(document.getElementById("n2").value);
+                const c=a+b;
+                document.getElementById("Result").value=c;
+            }
+            function substraction()
+            {
+                const a=parseInt(document.getElementById("n1").value);
+                const b=parseInt(document.getElementById("n2").value);
+                const c=a-b;
+                document.getElementById("Result").value=c;
+            }
+            function multiplication()
+            {
+                const a=parseInt(document.getElementById("n1").value);
+                const b=parseInt(document.getElementById("n2").value);
+                const c=a*b;
+                document.getElementById("Result").value=c;
+            }
+            function division()
+            {
+                const a=parseInt(document.getElementById("n1").value);
+                const b=parseInt(document.getElementById("n2").value);
+                const c=a/b;
+                document.getElementById("Result").value=c;
+            }
+        </script>
+        <h2>Result</h2>
+        <input type="text" id="Result" name="Result" /><br>
+        </fieldset>
+    </body>
+</html>
